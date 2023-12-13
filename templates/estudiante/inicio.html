@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block navbar %}
+    <!-- barra de navegaciones -->
+    {% include "estudiante/nav_estudent.html" %}
+{% endblock navbar %}
+
+
+{% block main %}
+
+    <!-- Saludo -->
+    <div class="m-4">
+        <h4 class="fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-grid-fill" viewBox="0 0 16 16">
+                <path
+                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" />
+            </svg> Mis Módulos</h4>
+    </div>
+    </div>
+
+    <!-- contenido de la pagina -->
+    <div class="m-4">
+        <div class="container-fluid row">
+            <div class="col-sm-12 col-md-5 col-lg-2 m-1">
+                <div class="card">
+                    <a class="btn btn-secondary card-body d-flex flex-column align-items-center"
+                        href="modulos/hoja_vida/hojaDeVida.html">
+                        <div class="border-bottom pb-2 mb-1">
+                            <img style="width: 100px;" class="img-modulos" src="{% static "img/modulo_hoja_de_vida.png" %}" >
+                        </div>
+                        <div>
+                            <h5 class="card-title fw-bold">Hoja de vida</h5>
+                            <p class="text-modulos card-text text-pequeño">Información del postulante</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-2 m-1">
+                <div class="card">
+                    <a class="btn btn-secondary card-body d-flex flex-column align-items-center"
+                        href="modulos/manual_usuario/manual_usuario.html">
+                        <div class="border-bottom pb-2 mb-1">
+                            <img style="width: 100px;" class="img-modulos" src="{% static "img/modulo_manuales_de_usuario.png" %}"
+                                >
+                        </div>
+                        <div>
+                            <h5 class="card-title fw-bold">Manual de usuario</h5>
+                            <p class="text-modulos card-text text-pequeño">Plataformas informáticas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-2 m-1">
+                <div class="card">
+                    <a class="btn btn-secondary card-body d-flex flex-column align-items-center"
+                        href="modulos/mis_postulaciones/mis_postulaciones.html">
+                        <div class="border-bottom pb-2 mb-1">
+                            <img style="width: 100px;" class="img-modulos" src="{% static "img/modulo_postulaciones.png" %}" >
+                        </div>
+                        <div>
+                            <h5 class="card-title fw-bold">Mis postulaciones</h5>
+                            <p class="text-modulos card-text text-pequeño">Mis postulaciones</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-2 m-1">
+                <div class="card">
+                    <a class="btn btn-secondary card-body d-flex flex-column align-items-center"
+                        href="modulos/notificaciones/notificaciones.html">
+                        <div class="border-bottom pb-2 mb-1">
+                            <img style="width: 100px;" class="img-modulos" src="{% static "img/modulo_notificaciones.png" %}"
+                                >
+                        </div>
+                        <div>
+                            <h5 class="card-title fw-bold">Notificaciones</h5>
+                            <p class="text-modulos card-text text-pequeño">Notificaciones</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-2 m-1">
+                <div class="card">
+                    <a class="btn btn-secondary card-body d-flex flex-column align-items-center"
+                        href="modulos/ofertas_laborales/ofertas_laborales.html">
+                        <div class="border-bottom pb-2 mb-1">
+                            <img style="width: 100px;" class="img-modulos" src="{% static "img/modulo_ofertas_laborales.png" %}"
+                                >
+                        </div>
+                        <div>
+                            <h5 class="card-title fw-bold">Ofertas Laborales</h5>
+                            <p class="text-modulos card-text text-pequeño">Ofertas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock main %}
+
+{% block modals %}{% endblock modals %}

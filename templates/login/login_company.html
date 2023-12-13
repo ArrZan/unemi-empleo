@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block icon %}
+    <link rel="shortcut icon" type="image/x-icon" href="{% static "img/empleo_new.png" %}">
+{% endblock icon %}
+
+{% block navbar %}{% endblock navbar %}
+
+{% block alerts %}{% endblock alerts %}
+
+{% block main %}
+    <div class="container-fluid bg-white">
+        <div class="row">
+            <div class="col-lg-8">
+                <img class="img-fluid w-100 full-image" src="{% static "img/logo_unemi_empresa.jpg" %}">
+            </div>
+            <!-- Alertas -->
+            <div class="pe-5 col-5" id="liveAlertPlaceholder"></div>
+            
+            
+            <div class="col-lg-4 mt-5">
+                <center>
+                    <img class="logo" src="{% static "img/empleo_new.png" %}" style="width: 140px;" alt="">
+                    <div class="brand"><p></p>
+                        <small>Bienvenido(a) a Unemi Empresas, <br>por favor ingrese sus datos.</small>
+                    </div>
+                    
+                </center>
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form action="." method="post">
+                        {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-3" name="username" autofocus="" autocapitalize="none" 
+                                autocomplete="username" placeholder="Escriba su nombre de usuario" maxlength="150" required="" id="id_username">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control mt-3" name="password" placeholder="Escriba su contraseña"
+                                autocomplete="current-password" id="id_password" required>
+
+                            </div>
+                            <br>
+                            <div class="container">
+                                <div class="row justify-content-center align-items-center text-center">
+                                    <div class="col-md-12">
+                                        <div class="d-inline-block">
+                                            <button class="btn btn-warning btn-sm me-2 border-0 rounded-pill" type="submit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-unlock-fill" viewBox="0 0 16 16">
+                                                    <path d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2"/>
+                                                </svg> 
+                                                Ingresar
+                                            </button>
+                                            <a href="" class="btn btn-secondary btn-sm border-0 rounded-pill">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                                                    <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                                                </svg>
+                                                ¿Olvidó su usuario y contraseña?
+                                            </a>
+                                        </div>
+                                        <div class="m-t-20 m-b-30 p-b-30 text-inverse mt-3">
+                                            <div class="alert alert-info text-center bg-info bg-opacity-25 border-0">
+                                                <a href="" style="font-size: 14px;" class="text-black" id="registrarusuario">
+                                                    ¿No tienes usuario y clave para ingresar?<br><b>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                                                    </svg> Regístrate aquí.</b>
+                                                </a>
+                                            </div>
+                                            <div class="alert alert-warning text-center bg-warning bg-opacity-25 border-0">
+                                                <a href="" style="font-size: 14px;" class="text-black">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
+                                                    </svg>
+                                                    ¿Fuiste estudiante de Unemi y estas en busca de ofertas laborales?
+                                                    <br><b>Haz click aquí</b>.
+                                                </a>
+                                            </div>
+                                            <span class="text-black ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15"/>
+                                                </svg>
+                                                En caso de necesitar soporte, solicitar a
+                                                <a href="" target="_blank">graduados@unemi.edu.ec</a>
+                                            </span>
+                                        </div>
+                                        <p class="text-center text-grey-darker mb-0 mt-5">
+                                            <span class="fw-bold">&copy; Universidad Estatal de Milagro </span>
+                                            - Todos los derechos Reservados - (Arguello - Carriel - Santillan - Zambrano)
+                                        </p>
+                                        <br><br>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock main %}
+
+{% block footer %}{% endblock footer %}

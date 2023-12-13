@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Postulantes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/estilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/empleo_new.png">
+</head>
+
+<body>
+    <!-- barra de navegaciones -->
+    <nav class="navbar navbar-expand-lg navbar-fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a href="../../modulos.html" class=""><img src="../../../img/unemi_empleo_logo_blanco.png"
+                                style="width: 100px" alt=""></a>
+                    </li>
+                </ul>
+                <!--! NOTIFICACIONES-->
+                <form class="d-flex" role="search">
+                    <div class="dropdown">
+                        <a class="btn position-relative mx-3" href="#" data-bs-toggle="dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                            </svg>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                9+
+                                <span class="visually-hidden">mensajes no leídos</span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-xs"
+                            aria-labelledby="panelNotificacionesUsuario">
+                            <li class="dropdown-item">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="../../../img/notificacion.svg" style="width: 150px" alt="Notifications">
+                                </div>
+                                <p class="mb-3 text-center" style="color: #7C7C7C; font-size: 14px;">Actualmente no
+                                    tiene nuevas notificaciones</p>
+                            </li><br>
+                            <li>
+                                <div class="border-top px-3 pt-3 pb-0 text-center">
+                                    <a href="../notificaciones/notificaciones.html"
+                                        class="text-decoration-none text-dark fw-bold" style="font-size: 14px;">
+                                        <i class="fa fa-bell"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                        </svg>
+                                        Ver mis notificaciones
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                <!--! DROPDPWN DEL EMPLEADO _ USUARIO-->
+                <form class="d-flex" role="search">
+                    <div class="dropdown ">
+                        <a href="#" tabindex="0" class="d-inline-flex align-items-center mx-3 icon-no-margin"
+                            id="action-menu-toggle-1" aria-label="Menú de usuario" data-bs-toggle="dropdown"
+                            role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu">
+                            <span class="userbutton">
+                                <span class="usertext">
+                                    <span class="avatars">
+                                        <span class="avatar current">
+                                            <img src="../../../img/user_prueba.png"
+                                                class="userpicture defaultuserpic rounded-circle" width="65" height="50"
+                                                alt="" />
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-xs"
+                            aria-labelledby="panelPerfilUsuario">
+                            <li>
+                                <div class="dropdown-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-md" style="height: 50px; width: 3.6rem;">
+                                            <img style="margin-top: 5px; height: 100%"
+                                                src="../../../img/user_prueba.png" width="60" height="60"
+                                                class="rounded-circle" alt="User Profile">
+                                        </div>
+                                        <div class="lh-1 ms-2 ">
+                                            <span class="badge bg-success text-white">EMPLEO</span>
+                                            <h6 class="mb-1 fw-bold text-dark fw-bold">DANIEL FELICIANO SANTILLAN
+                                                ALFONSO</h6>
+                                            <p class="mb-0 text-muted">dsantillana@unemi.edu.ec</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li> <!--* ES UNA LINEA-->
+                            <li>
+                                <a class="dropdown-item bloqueo_pantalla text-dark fw-semibold" href="#">
+                                    <img src="../../../img/icon_cambiar_password.svg" style="width:28px">
+                                    Cambiar contraseña
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li> <!--* ES UNA LINEA-->
+                            <li>
+                                <a class="dropdown-item logoutuser text-dark fw-semibold" href="#">
+                                    <img src="../../../img/icon_cerrar_sesion.svg" style="width:28px">
+                                    Cerrar sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar-fixed-top subnavbar"></div>
+
+    <!--* contenido de la pagina -->
+
+    <div class="container-fluid">
+        <div class="col col-form-label my-3">
+            <div class="d-flex justify-content-end">
+                <div class="col-auto me-auto">
+                    <a href="../../modulos.html" class="text-decoration-none">Inicio</a>
+                    <span class="fw-bold m-xl-1">/</span>
+                    <a href="#" class="text-decoration-none">Nueva Oferta laboral</a>
+                    <span class="fw-bold m-xl-1">/</span>
+                </div>
+                <div>
+                    <a href="../modulos.html    " class="btn btn-light rounded text-capitalize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-left-short" viewBox="0 0 9 18">
+                            <path fill-rule="evenodd"
+                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                        </svg>
+                        Atrás
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-start border-5 border-warning">
+                <h3 class="m-3">
+                    <span class="fw-bold">
+                        <h4 class="fw-bold text-blue">Nueva Oferta laboral</h4>
+                        <h6 class="opacity-75 text-blue">Registra tu nueva oferta laboral</h6>
+                    </span>
+                </h3>
+            </div>
+        </div>
+        <div class=" container col  bg-white border-top border-5 rounded border-warning">
+            <div class="p-4">
+
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="inputEmail4" class="form-label fw-bold">Puesto:</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputPassword4" class="form-label fw-bold">Nivel:</label>
+                        <select id="inputState" class="form-select">
+                            <option selected disabled>Escoge...</option>
+                            <option>Tercer Nivel</option>
+                            <option>Cuarto Nivel</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="inputAddress" class="form-label fw-bold">Carreras:</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Escoge...</option>
+                            <option>Ingenieria en Software</option>
+                            <option>Ingenieria Ambiental</option>
+                            <option>Educacion</option>
+                        </select>
+                    </div>
+                    <div class="col-4">
+                        <label for="inputAddress2" class="form-label fw-bold">Modalidad:</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Escoge...</option>
+                            <option>Presencial</option>
+                            <option>Remoto</option>
+                            <option>Hibrida</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputCity" class="form-label fw-bold">Dedicacion:</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label fw-bold">Jornada:</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Escoge...</option>
+                            <option>Matutina</option>
+                            <option>Vespertina</option>
+                            <option>Hibrida</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputZip" class="form-label fw-bold">Vacantes:</label>
+                        <input type="number" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputZip" class="form-label fw-bold">Fecha Cierre:</label>
+                        <input type="datetime-local" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputZip" class="form-label fw-bold">Descripción:</label>
+                        <textarea type="textare" class="form-control" id="inputZip" rows="5"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="row justify-content-center">
+                            <button type="submit" class="btn btn-primary col-auto">Registrar</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div><br>
+    </div><br>
+
+
+    <!-- Pie de pagina -->
+    <footer class="text-center fixed-bottom text-lg-start footer">
+        <section class="d-flex justify-content-center justify-content-lg-between p-1">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-11 text-center">
+                        <span class="fw-bold">Universidad Estatal de Milagro</span> - Todos los derechos Reservados -
+                        (Arguello - Carriel - Santillan - Zambrano)
+                    </div>
+                    <div class="col">
+                        <div>
+                            <h5 class="fw-bold" id="reloj"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../../../js/reloj.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

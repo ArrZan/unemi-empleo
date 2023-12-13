@@ -1,0 +1,95 @@
+body {
+    background-color: #ecebf1;
+}
+
+.footer {
+    background-color: #e4edf5;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #1c3247;
+}
+
+.subnavbar {
+    height: 10px;
+    background-color: #fe9900;
+}
+
+.logo {
+    width: 140px;
+}
+
+.img-index {
+    width: 30px;
+    height: 30px;
+}
+
+.text-pequeño {
+    font-size: 12px;
+}
+
+.text-blue {
+    color: #1c3247;
+}
+
+.modal-content {
+    border-radius: 20px;
+}
+
+.imagen-tarjeta {
+    height: 100px;
+}
+
+/* ! BOTON EN MOVIMIENTO */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulsating-btn {
+    animation: pulsate 1s infinite;
+}
+
+/* ! FONDO ROJO DEL CAMPO DE DISCAPACIDAD*/
+td {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.label.label-important {
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: white;
+    background-color: red;
+    /* Fondo rojo predeterminado */
+}
+
+.green-background {
+    background-color: green !important;
+    /* Cambio de color a verde */
+}
+
+/* ! BACKGROUND IMAGEN DEL LOGIN COMPANY*/
+.full-image {
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+/* ! Posición del liveAlertPlaceholder */
+
+#liveAlertPlaceholder {
+    position: absolute;
+    left: 1rem;
+    bottom: 2rem;
+}

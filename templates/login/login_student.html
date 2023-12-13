@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+    <div class="container">
+        <div class="row p-4">
+            <div class="col p-4 border-end border-3">
+                <center>
+                    <img class="logo" src="{% static "img/empleo_new.png" %}">
+                </center>
+                <div class="border-start border-5 rounded-start border-warning">
+                    <h4 class="m-3 text-center text-blue">
+                        <span class="fw-bold">Facilitamos todos tus procesos</span>
+                        <p>en postulación de empleos.</p>
+                    </h4>
+                </div>
+                <div class="m-4 text-blue">
+                    <div class="m-4">
+                        <img class="img-index" src="{% static "img/hoja-de-vida.png" %}">
+                        Actualización de <span class="fw-bold">hoja de vida</span>
+
+                    </div>
+                    <div class="m-4">
+                        <img class="img-index" src="{% static "img/postular.png" %}"> <span class="fw-bold">Postular</span>
+                        en la vacantes ofertadas por empresas
+                    </div>
+                    <div class="m-4">
+                        <img class="img-index" src="{% static "img/consultar.png" %}"> <span class="fw-bold">Consultar</span>
+                        el estado de su postulación
+                    </div>
+                    <div class="m-4">
+                        <img class="img-index" src="{% static "img/modulos.png" %}"> <span class="fw-bold">Consultar</span>
+                        Y más procesos para ti.
+                    </div>
+                </div>
+            </div>
+            <!-- ! FORMULARIO -->
+            <div class="col m-4">
+                <div class="p-4">
+                    <h3 class="text-warning text-center fw-bold">Inicio de Sesión</h3>
+                    <p class="text-center text-blue">Ingrese sus datos de forma correcta</p>
+                    <form action="." method="post">
+                        {% csrf_token %}
+                        
+                        <div class="form-group">
+                            <label for="id_username" class="form-label mt-3 fw-bold text-blue">Nombre de Usuario</label>  
+                            <input type="text" name="username" class="form-control" autocapitalize="none"
+                            placeholder="Escriba su nombre de usuario" autocomplete="username" maxlength="150" id="id_username" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_password" class="form-label mt-3 fw-bold text-blue">Contraseña</label>
+                            <input type="password" class="form-control" name="password" id="id_password"
+                                placeholder="Escriba su contraseña" required>
+                        </div>
+                        <br>
+                        <div class="container row justify-content-center">
+                            <button class="btn btn-warning rounded-pill" type="submit">Entrar</button>
+                            <p class="text-center">¿Tienes problemas?
+                                <a href="" class=" fw-bold" id="registrar-u">Contacta con el
+                                    administrador</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock main %}
+
+{% block modals %}
+    <div class="modal fade" id="inicio_sesion" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true"
+    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body m-4">
+                    <h5 class="text-center fw-bold text-blue">Ofertas laborales</h5>
+                    <h5 class="text-center fw-bold text-blue">UNEMI EMPLEO</h5>
+                    <div class="row">
+                        <div class="col-sm-6 border-end border-3">
+                            <center>
+                                <img class="m-2" style="width:80px ;" src="{% static "img/oportunidad-laboral.png" %}">
+                            </center>
+                            <h5 class="text-center fw-bold text-blue">¿Estás buscando una oportunidad laboral?</h5>
+                            <p style="height: 50px;" class="text-center text-pequeño text-blue">En nuestro sistema
+                                tenemos nuchas ofertas que
+                                pueden
+                                interesarte</p>
+                            <div class="row justify-content-center align-items-center">
+                                <a type="button" class="col-auto btn btn-warning rounded-pill"
+                                    data-bs-dismiss="modal">Iniciar Sesión</a>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-6    ">
+                            <center>
+                                <img class="m-2" style="width:80px ;" src="{% static "img/modulo_ofertas_laborales.png" %}">
+                            </center>
+                            <h5 class="text-center fw-bold text-blue">¿Eres una empresa en busca de personal?</h5>
+                            <p style="height: 50px;" class="text-center text-pequeño text-blue"><a href="">Registrate
+                                    aquí</a> o ingresa a
+                                nuestro
+                                sistema y crea
+                                oferras
+                                laborales segun tus
+                                necesidades.</p>
+                            <div class="row justify-content-center align-items-center">
+                                <a href="{% url "loginCompany" %}" class="col-auto btn btn-warning rounded-pill">Iniciar Sesión</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock modals %}
+

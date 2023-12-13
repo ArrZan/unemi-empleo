@@ -1,0 +1,61 @@
+{% extends "navbar_authenticated.html" %}
+{% load static %}
+
+{% block dropdown %}
+    <form class="d-flex" role="search">
+        <div class="dropdown ">
+            <a href="#" tabindex="0" class="d-inline-flex align-items-center mx-3 icon-no-margin"
+                id="action-menu-toggle-1" aria-label="Menú de usuario" data-bs-toggle="dropdown"
+                role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu">
+                <span class="userbutton">
+                    <span class="usertext">
+                        <span class="avatars">
+                            <span class="avatar current">
+                                <div class="avatar avatar-md" style="height: 50px; width: 50px;">
+                                    <img style="width: 100%; height: 100%; object-fit: cover;" src="{{ request.user.estudiante.get_image }}"
+                                        class="userpicture defaultuserpic rounded-circle">
+                                </div>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-xs"
+                aria-labelledby="panelPerfilUsuario">
+                <li>
+                    <div class="dropdown-item">
+                        <div class="d-flex">
+                            <div class="avatar avatar-md" style="height: 50px; width: 3.6rem;">
+                                <img style="margin-top: 5px; width: 100%; height: 100%; object-fit: cover;" src="{{ request.user.estudiante.get_image }}"
+                                    class="rounded-circle" alt="User Profile">
+                            </div>
+                            <div class="lh-1 ms-2 ">
+                                <span class="badge bg-success text-white">EMPLEO</span>
+                                <h6 class="mb-1 fw-bold text-dark fw-bold">{{ request.user.estudiante.nombre }} {{ request.user.estudiante.apellidoPat }} {{ request.user.estudiante.apellidoMat }}</h6>
+                                <p class="mb-0 text-muted">{{ request.user.email }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li> <!--* ES UNA LINEA-->
+                {% comment %} <li>
+                    <a class="dropdown-item bloqueo_pantalla text-dark fw-semibold" href="#">
+                        <img src="{% static "img/icon_cambiar_password.svg" %}" style="width:28px">
+                        Cambiar contraseña
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li> <!--* ES UNA LINEA--> {% endcomment %}
+                <li>
+                    <a class="dropdown-item logoutuser text-dark fw-semibold" href="{% url "logout" %}">
+                        <img src="{% static "img/icon_cerrar_sesion.svg" %}" style="width:28px">
+                        Cerrar sesión
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </form>
+{% endblock dropdown %}

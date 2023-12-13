@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modificar datos personales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/estilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../img/Panther_Logo.png">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a href="../../modulos.html" class=""><img src="../../../img/unemi_empleo_logo_blanco.png"
+                                style="width: 100px" alt=""></a>
+                    </li>
+                </ul>
+                <!--! NOTIFICACIONES-->
+                <form class="d-flex" role="search">
+                    <div class="dropdown">
+                        <a class="btn position-relative mx-3" href="#" data-bs-toggle="dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                                class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                            </svg>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                9+
+                                <span class="visually-hidden">mensajes no leídos</span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-xs"
+                            aria-labelledby="panelNotificacionesUsuario">
+                            <li class="dropdown-item">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="../../../img/notificacion.svg" style="width: 150px" alt="Notifications">
+                                </div>
+                                <p class="mb-3 text-center" style="color: #7C7C7C; font-size: 14px;">Actualmente no
+                                    tiene nuevas notificaciones</p>
+                            </li><br>
+                            <li>
+                                <div class="border-top px-3 pt-3 pb-0 text-center">
+                                    <a href="../notificaciones/notificaciones.html"
+                                        class="text-decoration-none text-dark fw-bold" style="font-size: 14px;">
+                                        <i class="fa fa-bell"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                        </svg>
+                                        Ver mis notificaciones
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                <!--! DROPDPWN DEL EMPLEADO _ USUARIO-->
+                <form class="d-flex" role="search">
+                    <div class="dropdown ">
+                        <a href="#" tabindex="0" class="d-inline-flex align-items-center mx-3 icon-no-margin"
+                            id="action-menu-toggle-1" aria-label="Menú de usuario" data-bs-toggle="dropdown"
+                            role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu">
+                            <span class="userbutton">
+                                <span class="usertext">
+                                    <span class="avatars">
+                                        <span class="avatar current">
+                                            <img src="../../../img/user_prueba.png"
+                                                class="userpicture defaultuserpic rounded-circle" width="65" height="50"
+                                                alt="" />
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-xs"
+                            aria-labelledby="panelPerfilUsuario">
+                            <li>
+                                <div class="dropdown-item">
+                                    <div class="d-flex">
+                                        <div class="avatar avatar-md" style="height: 50px; width: 3.6rem;">
+                                            <img style="margin-top: 5px; height: 100%"
+                                                src="../../../img/user_prueba.png" width="60" height="60"
+                                                class="rounded-circle" alt="User Profile">
+                                        </div>
+                                        <div class="lh-1 ms-2 ">
+                                            <span class="badge bg-success text-white">EMPLEO</span>
+                                            <h6 class="mb-1 fw-bold text-dark fw-bold">DANIEL FELICIANO SANTILLAN
+                                                ALFONSO</h6>
+                                            <p class="mb-0 text-muted">dsantillana@unemi.edu.ec</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li> <!--* ES UNA LINEA-->
+                            <li>
+                                <a class="dropdown-item bloqueo_pantalla text-dark fw-semibold" href="#">
+                                    <img src="../../../img/icon_cambiar_password.svg" style="width:28px">
+                                    Cambiar contraseña
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li> <!--* ES UNA LINEA-->
+                            <li>
+                                <a class="dropdown-item logoutuser text-dark fw-semibold" href="#">
+                                    <img src="../../../img/icon_cerrar_sesion.svg" style="width:28px">
+                                    Cerrar sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar-fixed-top subnavbar"></div>
+
+    <!--* contenido de la pagina -->
+
+    <div class="container-fluid">
+        <div class="col col-form-label my-3">
+            <div class="d-flex justify-content-end">
+                <div class="col-auto me-auto">
+                    <a href="#" class="text-decoration-none">Inicio</a>
+                    <span class="fw-bold m-xl-1">/</span>
+                    <a href="#" class="text-decoration-none">Hoja de vida</a>
+                    <span class="fw-bold m-xl-1">/</span>
+                </div>
+                <div>
+                    <a href="hojaDeVida.html" class="btn btn-light rounded text-capitalize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-arrow-left-short" viewBox="0 0 9 18">
+                            <path fill-rule="evenodd"
+                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" />
+                        </svg>
+                        Atrás
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--! FORMULARIO-->
+
+        <div class="col-lg-8 col-md-12 mx-auto">
+            <div class="border-start border-5 border-warning mx-3">
+                <h3 class="m-3">
+                    <span class="fw-bold">
+                        <h4 class="fw-bold mb-0">Modificar datos personales</h4>
+                        <h6 class="opacity-75 mt-0">Ingrese todos sus datos de forma correcta</h6>
+                    </span>
+                </h3>
+            </div>
+            <div class="col mx-2 bg-white border-top border-5 rounded border-warning">
+                <!-- <div class="card card-primary card-outline card-outline-tabs"> -->
+                <div class="card-header p-4">
+                    <form class="form-group p-2" id="formulario" style="width: 100%; margin-bottom: 0">
+                        <div class="row">
+                            <!--! NOMBRE-->
+                            <div id="fieldset_nombres" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12"
+                                        style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_nombres" style="padding-right: 10px">Nombres:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="nombres" value="DANIEL FELICIANO" class="form-control"
+                                            maxlength="100" readonly disabled id="id_nombres">
+                                        <div class="invalid-feedback" id="errorMessagenombres"></div>
+                                        <p id="errorvalidate_id_nombres"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px">
+                                        </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! 1ER APELLIDO-->
+                            <div id="fieldset_apellido1" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_apellido1" style="padding-right: 10px">1er Apellido:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="apellido1" value="SANTILLAN" class="form-control" maxlength="50" readonly
+                                            disabled id="id_apellido1">
+                                        <div class="invalid-feedback" id="errorMessageapellido1"></div>
+                                        <p id="errorvalidate_id_apellido1"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! 2DO APELLIDO-->
+                            <div id="fieldset_apellido2" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_apellido2" style="padding-right: 10px">2do Apellido:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="apellido2" value="ALFONSO" class="form-control" maxlength="50" readonly
+                                            disabled id="id_apellido2">
+                                        <div class="invalid-feedback" id="errorMessageapellido2"></div>
+                                        <p id="errorvalidate_id_apellido2"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! CÉDULA-->
+                            <div id="fieldset_cedula" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_cedula" style="padding-right: 10px">Cédula:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="cedula" value="0909090909" class="imp-cedula form-control" maxlength="10"
+                                            readonly disabled id="id_cedula">
+                                        <div class="invalid-feedback" id="errorMessagecedula"></div>
+                                        <p id="errorvalidate_id_cedula"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! PASAPORTE-->
+                            <div id="fieldset_pasaporte" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12"
+                                        style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_pasaporte" style="padding-right: 10px">Pasaporte:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="pasaporte" class="imp-cedula form-control"
+                                            maxlength="15" id="id_pasaporte">
+                                        <div class="invalid-feedback" id="errorMessagepasaporte"></div>
+                                        <p id="errorvalidate_id_pasaporte"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px">
+                                        </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px">
+                                            Nota: Para ingresar el pasaporte digite VS al inicio de la numeracion.
+                                            Ejemplo:VSA092
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! FECHA DE NACIMIENTO-->
+                            <div id="fieldset_nacimiento" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-date col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_nacimiento" style="padding-right: 10px">Fecha nacimiento:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="date" name="nacimiento" value="10-08-2001" class="selectorfecha form-control"
+                                            id="id_nacimiento">
+                                        <div class="invalid-feedback" id="errorMessagenacimiento"></div>
+                                        <p id="errorvalidate_id_nacimiento"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-date"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! GÉNERO-->
+                            <div id="fieldset_sexo" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_sexo" style="padding-right: 10px">Género:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <select name="sexo" class="form-control" required id="id_sexo">
+                                            <option value="">---------</option>
+                                            <option value="1" selected>HOMBRE</option>
+                                            <option value="2">MUJER</option>
+                                            <option value="3">39 TIPOS DE GAY</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="errorMessagesexo"></div>
+                                        <p id="errorvalidate_id_sexo"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! PAÍS-->
+                            <div id="fieldset_pais" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_pais" style="padding-right: 10px">País de residencia:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <select name="pais" class="form-control" id="id_pais">
+                                            <option value="">---------</option>
+                                            <option value="1">ECUADOR</option>
+                                            <option value="2">COLOMBIA</option>
+                                            <option value="3">EE.UU</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="errorMessagepais"></div>
+                                        <p id="errorvalidate_id_pais"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! PROVÍNCIA-->
+                            <div id="fieldset_provincia" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_provincia" style="padding-right: 10px">Província de residencia:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <select name="provincia" class=" form-control" id="id_provincia">
+                                            <option value="">---------</option>
+                                            <option value="1">AZUAY</option>
+                                            <option value="2">BOLIVAR</option>
+                                            <option value="3">CAÑAR</option>
+                                            <option value="4">TUNGURAHUA</option>
+                                            <option value="5">ZAMORA CHINCHIPE</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="errorMessageprovincia"></div>
+                                        <p id="errorvalidate_id_provincia"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! CATÓN-->
+                            <div id="fieldset_canton" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_canton" style="padding-right: 10px">Cantón de residencia:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <select name="canton" class="form-control" id="id_canton">
+                                            <option value="">---------</option>
+                                            <option value="1">ALFREDO BAQUERIZO MORENO (JUJAN)</option>
+                                            <option value="2">BALAO</option>
+                                            <option value="3">BALZAR</option>
+                                            <option value="4">SANTA LUCIA</option>
+                                            <option value="5">SIMON BOLIVAR</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="errorMessagecanton"></div>
+                                        <p id="errorvalidate_id_canton"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! PARROQUIA-->
+                            <div id="fieldset_parroquia" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_parroquia" style="padding-right: 10px">Parroquia de residencia:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <select name="parroquia" class="form-control" id="id_parroquia">
+                                            <option value="">---------</option>
+                                            <option value="1">CHIRIJOS</option>
+                                            <option value="2">CHOBO</option>
+                                            <option value="3">CORONEL ENRIQUE VALDEZ C.</option>
+                                            <option value="4">ERNESTO SEMINARIO HANS</option>
+                                            <option value="5">MARISCAL SUCRE-HUAQUES</option>
+                                            <option value="6" selected>MILAGRO</option>
+                                            <option value="7">ROBERTO ASTUDILLO</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="errorMessageparroquia"></div>
+                                        <p id="errorvalidate_id_parroquia"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! SECTOR-->
+                            <div id="fieldset_sector" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_sector" style="padding-right: 10px">Sector:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="sector" value="URBANO" class="imp-50 form-control" maxlength="100"
+                                            id="id_sector">
+                                        <div class="invalid-feedback" id="errorMessagesector"></div>
+                                        <p id="errorvalidate_id_sector"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! CALLE PRINCIPAL-->
+                            <div id="fieldset_direccion" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_direccion" style="padding-right: 10px">Calle principal:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="direccion" value="AV. ALFREDO ADUM" class="imp-75 form-control" maxlength="100"
+                                            id="id_direccion">
+                                        <div class="invalid-feedback" id="errorMessagedireccion"></div>
+                                        <p id="errorvalidate_id_direccion"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! CALLE SECUNDARIA-->
+                            <div id="fieldset_direccion2" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_direccion2" style="padding-right: 10px">Calle secundaria:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="direccion2" value="AL FRENTE DE LA OTRA CASA" class="imp-75 form-control"
+                                            maxlength="100" id="id_direccion2">
+                                        <div class="invalid-feedback" id="errorMessagedireccion2"></div>
+                                        <p id="errorvalidate_id_direccion2"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! NÚMERO DE RECIDENCIA-->
+                            <div id="fieldset_num_direccion" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_num_direccion" style="padding-right: 10px">Número residencia:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="num_direccion" value="0" class="imp-number form-control" maxlength="15"
+                                            id="id_num_direccion">
+                                        <div class="invalid-feedback" id="errorMessagenum_direccion"></div>
+                                        <p id="errorvalidate_id_num_direccion"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! TELÉFONO MÓVIL-->
+                            <div id="fieldset_telefono" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_telefono" style="padding-right: 10px">Teléfono móvil:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="telefono" value="0987098789" class="imp-50 form-control" maxlength="50"
+                                            id="id_telefono">
+                                        <div class="invalid-feedback" id="errorMessagetelefono"></div>
+                                        <p id="errorvalidate_id_telefono"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! TELÉFONO FIJO-->
+                            <div id="fieldset_telefono_conv" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_telefono_conv" style="padding-right: 10px">Teléfono fijo:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="telefono_conv" value="097778978" class="imp-50 form-control" maxlength="50"
+                                            id="id_telefono_conv">
+                                        <div class="invalid-feedback" id="errorMessagetelefono_conv"></div>
+                                        <p id="errorvalidate_id_telefono_conv"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! CORREO PERSONAL-->
+                            <div id="fieldset_email" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_email" style="padding-right: 10px">Correo electrónico:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="email" value="donaldsantillana@gmail.com" class="imp-50 form-control"
+                                            maxlength="200" id="id_email">
+                                        <div class="invalid-feedback" id="errorMessageemail"></div>
+                                        <p id="errorvalidate_id_email"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! CORREO INSTITUCIONAL-->
+                            <div id="fieldset_emailinst" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_emailinst" style="padding-right: 10px">Correo institucional:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="emailinst" value="dsantillana@unemi.edu.ec" class="imp-50 form-control"
+                                            maxlength="200" readonly disabled id="id_emailinst">
+                                        <div class="invalid-feedback" id="errorMessageemailinst"></div>
+                                        <p id="errorvalidate_id_emailinst"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! ETNIA-->
+                            <div id="fieldset_etnia" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_etnia" style="padding-right: 10px">Etnia:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <select name="etnia" class="imp-50 form-group form-check" id="id_etnia">
+                                            <option value="">---------</option>
+                                            <option value="2">AFROECUATORIANO/A</option>
+                                            <option value="7">BLANCO/A</option>
+                                            <option value="1">INDIGENA</option>
+                                            <option value="6" selected>MESTIZO/A</option>
+                                            <option value="5">MONTUBIO/A</option>
+                                            <option value="4">MULATO/A</option>
+                                            <option value="3">NEGRO/A</option>
+                                            <option value="10">NO REGISTRA</option>
+                                            <option value="8">OTRO</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="errorMessageetnia"></div>
+                                        <p id="errorvalidate_id_etnia"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! GRUPO LGTBI-->
+                            <div id="fieldset_lgtbi" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_lgtbi" style="padding-right: 10px">Pertenece al Grupo LGTBI?:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="checkbox" name="lgtbi" id="id_lgtbi">
+                                        <div class="invalid-feedback" id="errorMessagelgtbi"></div>
+                                        <p id="errorvalidate_id_lgtbi"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! ESTADO CIVIL-->
+                            <div id="fieldset_estadocivil" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_estadocivil" style="padding-right: 10px">Estado civil:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <select name="estadocivil" class="imp-50" id="id_estadocivil">
+                                            <option value="">---------</option>
+                                            <option value="1" selected>SOLTERO</option>
+                                            <option value="2">CASADO</option>
+                                            <option value="3">DIVORCIADO</option>
+                                            <option value="4">VIUDO</option>
+                                            <option value="5">UNION DE HECHO</option>
+                                            <option value="6">UNION LIBRE</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="errorMessageestadocivil"></div>
+                                        <p id="errorvalidate_id_estadocivil"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! TIENE DISCAPACIDAD !!!!!!!!!!!! AL DARLE EL CHECKNOX TIENE QUE HABILITARSE LOS 5 CAMPOS DE ABAJO-->
+                            <div id="fieldset_tienediscapacidad" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_tienediscapacidad" style="padding-right: 10px">Tiene Discapacidad?:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="checkbox" name="tienediscapacidad" id="id_tienediscapacidad">
+                                        <div class="invalid-feedback" id="errorMessagetienediscapacidad"></div>
+                                        <p id="errorvalidate_id_tienediscapacidad"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! TIPO DE DISCAPACIDAD-->
+                            <div id="fieldset_tipodiscapacidad" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_tipodiscapacidad" style="padding-right: 10px">Tipo de Discapacidad:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <select name="tipodiscapacidad" id="id_tipodiscapacidad">
+                                            <option value="" selected>---------</option>
+                                            <option value="5">AUDITIVA</option>
+                                            <option value="1">FISICA MOTORA</option>
+                                            <option value="4">INTELECTUAL</option>
+                                            <option value="8">LENGUAJE</option>
+                                            <option value="9">MENTAL PSICOSOCIAL</option>
+                                            <option value="7">VISUAL</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="errorMessagetipodiscapacidad"></div>
+                                        <p id="errorvalidate_id_tipodiscapacidad"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! % DE DISCAPACIDAD-->
+                            <div id="fieldset_porcientodiscapacidad" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_porcientodiscapacidad" style="padding-right: 10px">% de Discapacidad:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="porcientodiscapacidad" value="0.0" class="form-control"
+                                            id="id_porcientodiscapacidad">
+                                        <div class="invalid-feedback" id="errorMessageporcientodiscapacidad"></div>
+                                        <p id="errorvalidate_id_porcientodiscapacidad"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! Nº CARNET DE DISCAPACIDAD-->
+                            <div id="fieldset_carnetdiscapacidad" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_carnetdiscapacidad" style="padding-right: 10px">N° Carnet Discapacitado:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="text" name="carnetdiscapacidad" class="form-control" maxlength="50"
+                                            id="id_carnetdiscapacidad">
+                                        <div class="invalid-feedback" id="errorMessagecarnetdiscapacidad"></div>
+                                        <p id="errorvalidate_id_carnetdiscapacidad"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! CARNET DE DISCAPACIDAD-->
+                            <div id="fieldset_archivo" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_archivo" style="padding-right: 10px">Carnet de Discapacidad:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <input type="file" name="archivo" id="id_archivo">
+                                        <div class="invalid-feedback" id="errorMessagearchivo"></div>
+                                        <p id="errorvalidate_id_archivo"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px">Tamaño
+                                            Maximo permitido 4Mb, en formato pdf </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! INTITUCIÓN VALIDA-->
+                            <div id="fieldset_institucionvalida" class="col-md-" style="float: left; padding-right: 20px;">
+                                <div class="row">
+                                </div>
+                                <div class="row-fluid input-group">
+                                    <div class="label-text col-md-6 col-sm-3 col-12" style="display: table;height: 30px;">
+                                        <div style="display: table-cell; vertical-align: middle; line-height: 11px">
+                                            <label for="id_institucionvalida" style="padding-right: 10px">Institución Valida:</label>
+                                        </div>
+                                    </div>
+                                    <div class="control-group col-md-6 col-sm-9 col-12" style="float: left; width: 100">
+                                        <select name="institucionvalida" id="id_institucionvalida">
+                                            <option value="" selected>---------</option>
+                                            <option value="3">CONADIS</option>
+                                            <option value="4">MINISTERIO DE SALUD PÚBLICA DEL ECUADOR</option>
+                                            <option value="39">UNIVERSIDAD ESTATAL DE MILAGRO</option>
+                                        </select>
+                                        <div class="invalid-feedback" id="errorMessageinstitucionvalida"></div>
+                                        <p id="errorvalidate_id_institucionvalida"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                        <p class="help-text"
+                                            style="color: #dc1414;font-size: xx-small; margin-bottom: 0; height: 13px; line-height: 13px"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--! SEGUIR AÑADIENDO MAS CAMPOS-->
+                            <!--! BOTON-->
+                            <div class="row" style="margin-bottom: 40px"></div>
+                            <div class="row">
+                                <div style="text-align: right; float: left; width: 100%">
+                                    <a href="" class="btn btn-success btn-form" id="formguardar">Guardar</a>
+                                    <a href="" class="btn btn-danger" id="formcancel">Cancelar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div><br><br>
+    </div><br>
+
+
+    <!-- Pie de pagina -->
+    <footer class="text-center fixed-bottom text-lg-start footer">
+        <section class="d-flex justify-content-center justify-content-lg-between p-1">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-11 text-center">
+                        <span class="fw-bold">Universidad Estatal de Milagro</span> - Todos los derechos Reservados -
+                        (Arguello - Carriel - Santillan - Zambrano)
+                    </div>
+                    <div class="col">
+                        <div>
+                            <h5 class="fw-bold" id="reloj"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../../../js/reloj.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    
+</body>
+
+</html>
